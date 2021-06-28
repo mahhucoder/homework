@@ -23,13 +23,14 @@
 
 import React from 'react'
 import {
-  ScrollView, View
+  ScrollView, View,Text, StyleSheet
 } from 'react-native'
-import CommentBlock from './android/components/CommentBlock'
-import MainContent from './android/components/MainContent'
-import StatisticalCity from './android/components/StatisticalCity'
-import Title from './android/components/Title'
-import Footer from './android/components/Footer'
+import CommentBlock from './src/component/components/CommentBlock'
+import MainContent from './src/component/components/MainContent'
+import StatisticalCity from './src/component/components/StatisticalCity'
+import Title from './src/component/components/Title'
+import Footer from './src/component/components/Footer'
+import SearchPopular from './src/component/components/SearchPopular'
 
 
 const App = () => {
@@ -37,16 +38,14 @@ const App = () => {
   const title = 'Thêm 47 ca Covid-19, chủ yếu ở TP HCM'
 
   return (
-    <ScrollView>
-      <View>
-        <Title title={title}/>
-        <MainContent />
-        <StatisticalCity />
-        <CommentBlock />
-        <Footer />
-      </View>
-    </ScrollView>
+    <View style={{height: '100%',display: 'flex',justifyContent: 'center'}}>
+      <SearchPopular />
+    </View>
   )
 }
+
+const styles = StyleSheet.create({
+  
+})
 
 export default App
