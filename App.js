@@ -25,12 +25,7 @@ import React from 'react'
 import {
   ScrollView, View,Text, StyleSheet
 } from 'react-native'
-import CommentBlock from './src/component/components/CommentBlock'
-import MainContent from './src/component/components/MainContent'
-import StatisticalCity from './src/component/components/StatisticalCity'
-import Title from './src/component/components/Title'
-import Footer from './src/component/components/Footer'
-import SearchPopular from './src/component/components/SearchPopular'
+import SearchPopular from './src/component/SearchPopular'
 
 
 const App = () => {
